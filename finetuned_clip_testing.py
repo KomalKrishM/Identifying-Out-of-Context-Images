@@ -123,20 +123,6 @@ def test(image, caption):
     
     return pred
 
-# image_path = "D:/Previous Downloads/Soma mam lab/flickr30k-images/1624481.jpg" #" 2656351.jpg
-image_path = "D:/OoC-multi-modal-fc-main/GenAI/US Underwater Transportation project.jpg" #Kid_Infant_food.jpg" #cat_swimming.jpg"     # raffle shows on independence day.jpg"              # Trump_Sonia.jpg"
-# caption = 'A young girl in red Snoopy pants is holding a very small baby on her lap'
-# caption = 'A young girl scarying the infant '
-# caption = ' The army people forgot their duty to save the country '
-# 'Many army men in a line holding guns in green suits walking down a concrete road with a big building in the background'  
-# caption = "Donald Trump having dinner with Sonia Gandhi"
-# caption = "rabbit is swimming with dolphins in water"
-# caption = "rabbit is playing with ducks in water"
-# caption = "cat is swimming in the water"
-# caption = "Kid is eating food with infant"
-caption = "United states started underwater transportation project"
-# caption = "group of children are celebrating united states on independence day"
-
 # Load the best saved model if exists and run for the test data.
 if os.path.isfile(os.path.join(args.exp_folder, 'best_model_acc.pth.tar')):
     checkpoint = torch.load(os.path.join(args.exp_folder, 'best_model_acc.pth.tar'))
