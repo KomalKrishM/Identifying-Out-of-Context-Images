@@ -22,8 +22,8 @@ It is built on top of the `Clip_Classifier` model from the official repo and is 
 
 | Image | Caption |
 |-------|---------|
-| ![0670_067.jpg](example_images/0670_067.jpg) | *President Obama arrives in Ohio.* | Prediction: Falsified
-| ![0705_423.jpg](example_images/0705_423.jpg) | *Hillary Clinton speaks at a book signing for "Hard Choices" at a Barnes & Noble in New York City on June 10, 2014, the day of the book’s release.* | Prediction: Pristine
+| ![example image 1](0670_067.jpg) | *President Obama arrives in Ohio.* | Prediction: Falsified
+| ![example image 2](0705_423.jpg) | *Hillary Clinton speaks at a book signing for "Hard Choices" at a Barnes & Noble in New York City on June 10, 2014, the day of the book’s release.* | Prediction: Pristine
 
 ---
 
@@ -42,12 +42,12 @@ https://github.com/S-Abdelnabi/OoC-multi-modal-fc
 
 ### `Collecting_test_images_captions.py`
 
-- Saves a set of pristine and falsified image-caption samples.
+- Saves a sample of pristine and falsified image-caption pairs.
 - No preprocessing is applied.
 
 ### `demo.py`
 
-- Loads an image and its caption (along with ground truth).
+- Loads an image and its caption along with the label.
 - Passes them to the `clip_classifier` model to **predict authenticity**.
 
 ---
