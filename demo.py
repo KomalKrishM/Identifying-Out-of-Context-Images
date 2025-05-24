@@ -2,14 +2,13 @@
 """
 Created on Thu Jan  2 22:57:06 2025
 
-@author: user
+@author: Komal
 """
 
 import json
 import os
 import torch
-import torchvision
-import torch.nn as nn
+
 import numpy as np
 
 import argparse
@@ -70,17 +69,17 @@ def test(image, caption, device):
     return pred
 
 
-test_image_path_1 = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/finetuning_clip/test_images/0223_867.jpg'
+test_image_path_1 = '/path to the image/OoC-multi-modal-fc-main/finetuning_clip/test_images/0223_867.jpg'
 test_caption_1 = 'The iconic Taj Mahal is a Unesco World Heritage site and was built in the 17th Century.'
-test_image_path_2 = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/finetuning_clip/test_images/0670_067.jpg'
+test_image_path_2 = '/path to the image/OoC-multi-modal-fc-main/finetuning_clip/test_images/0670_067.jpg'
 test_caption_2 = 'President Obama arrives in Ohio.'
-test_image_path_3 = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/finetuning_clip/test_images/0680_114.jpg'
+test_image_path_3 = '/path to the image/OoC-multi-modal-fc-main/finetuning_clip/test_images/0680_114.jpg'
 test_caption_3 = 'President Obama delivers the State of the Union to a joint session of Congress and honored guests.'
-test_image_path_4 = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/finetuning_clip/test_images/0204_397.jpg'
+test_image_path_4 = '/path to the image/OoC-multi-modal-fc-main/finetuning_clip/test_images/0204_397.jpg'
 test_caption_4 = 'Members of the media watch the Democratic presidential debate at Drake University.'
-test_image_path_5 = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/finetuning_clip/test_images/0050_618.jpg'
+test_image_path_5 = '/path to the image/OoC-multi-modal-fc-main/finetuning_clip/test_images/0050_618.jpg'
 test_caption_5 = 'Romney speaks at a Salt Lake City fundraiser on Sept 18.'
-test_image_path_6 = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/finetuning_clip/test_images/0705_423.jpg'
+test_image_path_6 = '/path to the image/OoC-multi-modal-fc-main/finetuning_clip/test_images/0705_423.jpg'
 test_caption_6 = 'Hillary Clinton speaks at a book signing for Hard Choices at a Barnes Noble in New York City on June 10 2014 the day of the book s release.'
 falsified_true_labels = [True, True, False, False, True, False] #[falsified_1, falsified_2, falsified_3, falsified_4, falsified_5, falsified_6]
 
