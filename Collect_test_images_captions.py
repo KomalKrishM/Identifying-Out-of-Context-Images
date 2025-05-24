@@ -2,7 +2,7 @@
 """
 Created on Tue Feb 11 11:22:46 2025
 
-@author: komal
+@author: Komal
 """
 
 import torch
@@ -50,8 +50,8 @@ class NewsClipDataset(Dataset):
 import shutil
 from torch.utils.data import DataLoader
 
-visual_news_root_dir = '/Users/komalkrishnamogilipalepu/Downloads/origin/' #"../visual_news/origin/"
-news_clip_root_dir = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/news_clippings/data/merged_balanced/' #"../news_clippings/data/merged_balanced/"
+visual_news_root_dir = 'path to the visual news dataset folder/origin/' #"../visual_news/origin/"
+news_clip_root_dir = 'path to the merged balanced NewsCLIPpings dataset/OoC-multi-modal-fc-main/news_clippings/data/merged_balanced/' #"../news_clippings/data/merged_balanced/"
 split = 'test'
 
 test_dataset = NewsClipDataset(visual_news_root_dir, news_clip_root_dir, split, None)
