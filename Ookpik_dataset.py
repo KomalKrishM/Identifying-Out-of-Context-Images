@@ -71,9 +71,9 @@ class OoCICIdentification:
     
 def main():
 
-    input_data = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/Ookpik_dataset/test_data.json'
-    input_images = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/Ookpik_dataset/'
-    model_path = '/Users/komalkrishnamogilipalepu/Downloads/OoC-multi-modal-fc-main/exp/best_model_acc.pth.tar'
+    input_data = './Ookpik_dataset/test_data.json'
+    input_images = './Ookpik_dataset/'
+    model_path = './best_model_acc.pth.tar'
     
     IC_identification = OoCICIdentification()
     IC_identification.load_model(model_path)
